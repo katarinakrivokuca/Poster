@@ -22,7 +22,7 @@
  \definecolor{headerfontcol}{RGB}{255,255,255} % Text color for the header text in the content boxes
  \definecolor{boxcolor}{RGB}{240 240 255} % Background color for the content in the content boxes
 
-\topmargin -3cm
+\topmargin -2.7cm
 \renewcommand{\baselinestretch}{0.7}
 
 \begin{document}
@@ -75,8 +75,8 @@
 
 \headerbox{Problem}{name=uvod,column=0,row=0, span=3}
 { 
-	\textbf{Definicija:}
- 	Izgubili ste se sa prijateljima u n-dimenzionoj \v sumi.
+	\textbf{Postavka problema:}
+ 	Izgubili ste se sa prijateljima u $n$-dimenzionoj \v sumi.
  	Sve \v sto znate su oblik i dimenzije \v sume.
  	Kako najbr\v ze neko od vas mo\v ze da iza\dj e po pomo\' c?
  	\\
@@ -84,7 +84,7 @@
  	\textbf{Koje \v sume mi posmatramo?}
  	\begin{itemize}
  		\item traka
- 		\item k-traka
+ 		\item $k$-traka
  		\item \v sume \v ciji je konveksni omota\v c trougao
  	\end{itemize}
  	{
@@ -94,18 +94,30 @@
 	}
    	\vspace{0.15cm}
 }
-
-
-\headerbox{Rezultati - trake u $\mathbb{R}^n$}{name=Rez1, column=0, row=0, span=3, below=uvod}
+\headerbox{Za\v sto je bolje i\' ci sa prijateljima?}{name=Rez2, column=0, row=0, span=3,below=uvod}
 {
- 	Ideja je bila  prona\' ci neki, \v sto "manji" objekat koji ne mo\v zemo da smestimo u traku u $\mathbb{R}^n$
+	Bavili smo se i na\v sim uop\v stenjem problema:
+	\begin{itemize}
+		\item Put za n ljudi je skup od $k$ puteva koji kre\' cu iz iste ta\v cke.
+		\item Du\v zina puta za $n$ ljudi je suma du\v zina pojedina\v cnih puteva.
+		\item Za put $P_k$ za $k$ ljudi ka\v zemo da je izlazan put iz \v sume $F$ ako za bilo koji po\v cetni polo\v zaj, barem jedan od n puteva iz skupa izlazi iz $F$.
+	\end{itemize}
+	%Sli\v cica Zalgallera i Y da ka\v zemo da je na\v se bolje
+	\vspace{0.15cm}
+}
+
+
+
+\headerbox{Rezultati - trake u $\mathbb{R}^n$}{name=Rez1, column=3, row=0, span=3}
+{
+ 	Ideja je bila  prona\' ci neki, \v sto ,,manji" objekat koji ne mo\v zemo da smestimo u traku u $\mathbb{R}^n$
  	\begin{theorem}
  		Izme\dj u dve hiperravni u $\mathbb{R}^n$ na udaljenosti 1 se ne mo\v ze postaviti pravilan $n$-simpleks stranice
  		$$\sqrt{\frac{2\left\lceil \frac{n}{2}\right\rceil\cdot \left( n-\left\lceil\frac{n}{2}\right\rceil+1\right)}{n+1}}$$
  		tako da ga ni jedna od ove dve hiperravni ne se\v ce. 
 		%slika tetraedra izme\dj u ravni
  	\end{theorem}
- 	Dalje smo tra\v zili \v sto kra\v cu \v setnju po ovom objektu
+ 	Dalje smo tra\v zili \v sto kra\v cu \' setnju po ovom objektu
 
  	\begin{theorem} Put koji formiraju po trojkama nekoplanarne ivice $n$-simpleksa \v cije su ivice du\v zine 
  		$\sqrt{\frac{2\left\lceil \frac{n}{2}\right\rceil\cdot \left( n-\left\lceil\frac{n}{2}\right\rceil+1\right)}{n+1}}$
@@ -127,20 +139,8 @@
 }
 
 
-\headerbox{Za\v sto je bolje i\' ci sa prijateljima?}{name=Rez2, column=3, row=0, span=3}
-{
-	Bavili smo se i na\v sim uop\v stenjem problema:
-	\begin{itemize}
-		\item Put za n ljudi je skup k puteva koji kre\' cu iz iste ta\v cke.
-		\item Du\v zina puta za n ljudi je suma du\v zina pojedina\v cnih puteva.
-		\item Za put za k ljudi $P_n$ ka\v zemo da je izlazan put iz \v sume $F$ ako za bilo koji po\v cetni polo\v zaj, barem jedan od n puteva iz skupa izlazi iz $F$.
-	\end{itemize}
-	%Sli\v cica Zalgallera i Y da ka\v zemo da je na\v se bolje
-	\vspace{0.15cm}
-}
 
-
-\headerbox{Rezultati - k-trake}{name=Rez3, column=3, row=0, span=3, below=Rez2}
+\headerbox{Rezultati - k-trake}{name=Rez3, column=0, row=0, span=3, below=Rez2}
 {
 	\v Sta ako druga\v cije uop\v stimo trake u vi\v sim dimenzijama? \\ \\
 	\begin{definition}
@@ -155,7 +155,7 @@
 }
 
 
-\headerbox{Rezultati - donje ograni\v cenje}{name=Rez4, column=3, row=0, span=3, below=Rez3}
+\headerbox{Rezultati - donje ograni\v cenje}{name=Rez4, column=0, row=0, span=3, below=Rez3}
 {
 	Gomi je pokazao gornje organi\v cenje za du\v zinu puta \v sirine 1.
 	On nas je inspirisao da uradimo sli\v cno za na\v se uop\v stenje sa n ljudi.
@@ -165,14 +165,14 @@
 	\end{theorem}
 	\begin{hipoteza}
 		Kako na\v se konstrukcijski dobijena re\v senja imaju ceo "red veli\v cine" ve\' cu du\v zinu nego 
-		data donja ograni\v cenja pretpostavljamo da je mogu\' ce poo\v stritii ove ocene. 
+		data donja ograni\v cenja pretpostavljamo da je mogu\' ce poo\v striti ove ocene. 
 	\end{hipoteza}
 	\vspace{0.15cm}
 }
 
-\headerbox{Dalji rad}{name=Dalje, column=3, row=0, span=3, below=Rez4}
+\headerbox{Dalji rad}{name=Dalje, column=3, row=0, span=3, below=Rez1}
 {
-	Posmatranjem objekata poput zarubljenih simpleksa, mogu\' ce je jo\v s pobolj\v sati predstavljene rezultate. Recimo za 3 dimenzije:\\ \\
+	Posmatranjem objekata poput zarubljenih simpleksa, mogu\' ce je jo\v s pobolj\v sati predstavljene rezultate. Recimo za 3 dimenzije.\\ \\
 	%slika zarubljenog tetraedra i puta po njemu
 	Tako\dj e prirodno je postaviti i slede\' ce pitanje:
 	"Grupa ljudi je zajedno izgubljena u \v sumi poznatih dimenzija. Koliko optimalno treba da ih bude,
