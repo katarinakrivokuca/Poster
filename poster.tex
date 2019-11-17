@@ -89,9 +89,9 @@
  	\begin{itemize}
  		\item traka
  		\item $k$-traka
- 		\item \v sume \v ciji je konveksni omota\v c trougao
+ 		\item planarne \v sume \v ciji je konveksni omota\v c trougao
  	\end{itemize}
-Bavili smo se i na\v sim uop\v stenjem problema:
+	\textbf{Bavili smo se i na\v sim uop\v stenjem problema:}
 	\begin{itemize}
 		\item Put za $k$ ljudi je skup od $k$ puteva koji kre\' cu iz iste ta\v cke.
 		\item Du\v zina puta za $k$ ljudi je suma du\v zina pojedina\v cnih puteva.
@@ -103,24 +103,21 @@ Bavili smo se i na\v sim uop\v stenjem problema:
 \headerbox{Za\v sto je bolje i\' ci sa prijateljima?}{name=Rez2, column=0, row=0, span=3,below=uvod}
 {
 	
-	\hspace{10pt} U slu\v caju trake u ravni je dokazano da je najkra\' ci izlazni  put za jednog \v coveka Zalgalerova kriva, koja je du\v zine oko 2.278291644. 
+	U slu\v caju trake u ravni je dokazano da je najkra\' ci izlazni  put za jednog \v coveka Zalgalerova kriva, koja je du\v zine oko 2.278291644. 
 	\\ 
- \hphantom{sdff}Bolje je i\' ci sa prijateljima jer je posmatrani put za tri \v coveka du\v zine 2, a izlazan je iz ove \v sume!
-	%Sli\v cica Zalgallera i Y da ka\v zemo da je na\v se bolje
+	\\
+ 	Bolje je i\' ci sa prijateljima jer je posmatrani put za tri \v coveka du\v zine 2, a izlazan je iz ove \v sume!
 	\begin{center}
-\begin{minipage}{0.25\linewidth}
-\includegraphics[width=\linewidth]{zalgaller}
-\captionof*{figure}{Zalgalerova kriva}
-\end{minipage}%
-\hspace{30pt}
-\begin{minipage}{0.25\linewidth}
-\includegraphics[width=\linewidth]{Y}
-\captionof*{figure}{Put za tri osobe}
-\end{minipage}
-\end{center}
-
-
-
+		\begin{minipage}{0.25\linewidth}
+			\includegraphics[width=\linewidth]{Zalgaller}
+			\captionof*{figure}{Zalgalerova kriva}
+		\end{minipage}
+		\hspace{30pt}
+		\begin{minipage}{0.25\linewidth}
+			\includegraphics[width=\linewidth]{Y}
+			\captionof*{figure}{Put za tri osobe}
+		\end{minipage}
+	\end{center}
 	\vspace{0.15cm}
 }
 
@@ -133,7 +130,7 @@ Bavili smo se i na\v sim uop\v stenjem problema:
 		$$S_k\geqslant\frac{k}{2k-2}\cdot \sqrt{2.2782^2+9(n-2)}$$
 	\end{theorem}
 	\begin{hipoteza}
-		Kako na\v se konstrukcijski dobijena re\v senja imaju ceo "red veli\v cine" ve\' cu du\v zinu nego 
+		Kako na\v se re\v senja dobijena konstrukcijom imaju ceo "red veli\v cine" ve\' cu du\v zinu nego 
 		data donja ograni\v cenja pretpostavljamo da je mogu\' ce poo\v striti ove ocene. 
 	\end{hipoteza}
 	\vspace{0.15cm}
@@ -146,36 +143,36 @@ Bavili smo se i na\v sim uop\v stenjem problema:
  	Ideja je bila  prona\' ci neki, \v sto ,,manji" objekat koji ne mo\v zemo da smestimo u traku u $\mathbb{R}^n$
  	\begin{theorem}
  		Izme\dj u dve hiperravni u $\mathbb{R}^n$ na udaljenosti 1 se ne mo\v ze postaviti pravilan $n$-simpleks stranice
- 		$$\sqrt{\frac{2\left\lceil \frac{n}{2}\right\rceil\cdot \left( n-\left\lceil\frac{n}{2}\right\rceil+1\right)}{n+1}}$$
+ 		$$\hat{a} = \sqrt{\frac{2\left\lceil \frac{n}{2}\right\rceil\cdot \left( n-\left\lceil\frac{n}{2}\right\rceil+1\right)}{n+1}}$$
  		tako da ga ni jedna od ove dve hiperravni ne se\v ce. 
 		%slika tetraedra izme\dj u ravni
  	\end{theorem}
- 	Dalje smo tra\v zili \v sto kra\v cu \' setnju po ovom objektu
-
- 	\begin{theorem} Put koji formiraju po trojkama nekoplanarne ivice $n$-simpleksa \v cije su ivice du\v zine 
- 		$\sqrt{\frac{2\left\lceil \frac{n}{2}\right\rceil\cdot \left( n-\left\lceil\frac{n}{2}\right\rceil+1\right)}{n+1}}$
- 		je izlazni put iz trake u n dimenzija i taj put ima du\v zinu:
-		$$L_{n,1}=n\cdot \sqrt{\frac{2\left\lceil \frac{n}{2}\right\rceil\cdot \left( n-\left\lceil\frac{n}{2}\right\rceil+1\right)}{n+1}}.$$
-		%slika tog puta na tetraedru
-	\end{theorem}
-	\begin{theorem}
- 		Put koji formira $n+1$ du\v zi od centra do svih temena pravilnog $n$-simpleksa  \v cije su ivice du\v zine
- 		$\sqrt{\frac{2\left\lceil \frac{n}{2}\right\rceil\cdot \left( n-\left\lceil\frac{n}{2}\right\rceil+1\right)}{n+1}}$
- 		je izlazni put za $n+1$ ljudi iz trake u $n$ dimenzija i taj put ima du\v zinu:
-		$$L_{n,n+1}=\sqrt{n\cdot\left\lceil\frac{n}{2}\right\rceil\cdot\left( n-\left\lceil\frac{n}{2}\right\rceil+1\right)}$$.
- 		%slika tetraedar
- 	\end{theorem}
- 	%\begin{wrapfigure}{r}{3.5cm}\vspace*{-0.5cm}
-	%\includegraphics[scale=0.1]{slika}
-	%\end{wrapfigure}
-	 \vspace{0.15cm}
+ 	Dalje smo tra\v zili \v sto kra\v cu \' setnju po ovom objektu.
+ 	Put koji formiraju po trojkama nekomplanarne ivice $n$-simpleksa \v cije su ivice du\v zine $\hat{a}$
+ 	je izlazan za jednog \v coveka, a sli\v cno je i put koji formira $n+1$ du\v zi 
+ 	od centra do svih temena pravilnog $n$-simpleksa  izlazan za n ljudi. Ovi putevi imaju du\v zinu:
+	$$L_{n,1}=n\hat{a} \ \ \ \ \  L_{n, n+1}=\sqrt{\frac{n(n+1)}{2}}\hat{a}$$
+		%$$L_{n,n+1}=\sqrt{n\cdot\left\lceil\frac{n}{2}\right\rceil\cdot\left( n-\left\lceil\frac{n}{2}\right\rceil+1\right)}$$.
+ 	\begin{center}
+ 		
+	 	\begin{minipage}{0.25\linewidth}
+			\includegraphics[width=\linewidth]{Put1}
+			\captionof*{figure}{Put za 1 \v coveka}
+		\end{minipage}
+		\hspace{30pt}
+	 	\begin{minipage}{0.25\linewidth}
+			\includegraphics[width=\linewidth]{Put4}
+			\captionof*{figure}{Put za 4 ljudi}
+		\end{minipage}
+	\end{center}
+	 \vspace{0.10cm}
 }
 
 
 
 \headerbox{Rezultati - k-trake}{name=Rez3, column=0, row=0, span=3, below=Rez2}
 {
-	\v Sta ako druga\v cije uop\v stimo trake u vi\v sim dimenzijama? \\ \\
+	\v Sta ako druga\v cije uop\v stimo trake u vi\v sim dimenzijama? \\
 	\begin{definition}
 		Defini\v simo \textbf{k-traku u n dimenzija} za svako prirodno $n$ i za svako $1\leqslant k\leqslant n-1$  kao \v sumu odredjenu
 		svim ta\v ckama iz $\mathbb{R}^n$ na udaljenosti manjoj ili jednakoj $\frac{1}{2}$ od nekog $k$-dimenzionog potprostora $\mathbb{R}^n$. 
@@ -183,7 +180,12 @@ Bavili smo se i na\v sim uop\v stenjem problema:
 	\begin{theorem}
 		Najkra\' ca izlazna putanja iz $k$-trake u $\mathbb{R}^n$ je ista kao najkra\' ca izlazna putanja iz trake u $\mathbb{R}^{k+1}$.
 	\end{theorem}
-	 %slika valjka u 3d
+	 \begin{center}
+	 	\begin{minipage}{0.25\linewidth}
+			\includegraphics[width=\linewidth]{Valjak}
+			\captionof*{figure}{Valjak}
+		\end{minipage}
+	\end{center}
 	\vspace{0.15cm}
 }
 
@@ -207,3 +209,8 @@ Bavili smo se i na\v sim uop\v stenjem problema:
 \end{poster}
 
 \end{document}
+
+
+
+
+
