@@ -66,7 +66,7 @@
 }
 {\color{white} 
 	\textbf{
-			\smaller Katarina Krivoku\' ca,  katarinakrivokuca@outlook.com, MATF Beograd\\
+			\smaller Katarina Krivoku\' ca,  katarinakrivokuca@outlook.com, Matemati\v cka gimnazija, Beograd\\
 		   	Dimitrije Gluk\v cevi\' c, dimchee90@gmail.com, {Gimnazija "Svetozar Markovi\' c", Ni\v s}   \\
 		   	mentor: Bojan Ba\v si\' c, PMF Novi Sad
 		}
@@ -80,16 +80,17 @@
 \headerbox{Problem}{name=uvod,column=0,row=0, span=3}
 { 
 	\textbf{Postavka problema:}
+	
  	Izgubili ste se sa prijateljima u $n$-dimenzionoj \v sumi.
  	Sve \v sto znate su oblik i dimenzije \v sume.
- 	Kako najbr\v ze neko od vas mo\v ze da iza\dj e po pomo\' c?
+ 	Kako treba da se dogovorite da svako ide da biste mogli da garantujete da \' ce neko od vas uspeti da iza\dj e po pomo\' c?
  	\\
  	\\
  	\textbf{Koje \v sume mi posmatramo?}
  	\begin{itemize}
  		\item traka
  		\item $k$-traka
- 		\item planarne \v sume \v ciji je konveksni omota\v c trougao
+ 		\item \v sume \v ciji je konveksni omota\v c trougao
  	\end{itemize}
 	\textbf{Bavili smo se i na\v sim uop\v stenjem problema:}
 	\begin{itemize}
@@ -103,14 +104,14 @@
 \headerbox{Za\v sto je bolje i\' ci sa prijateljima?}{name=Rez2, column=0, row=0, span=3,below=uvod}
 {
 	
-	U slu\v caju trake u ravni je dokazano da je najkra\' ci izlazni  put za jednog \v coveka Zalgalerova kriva, koja je du\v zine oko 2.278291644. 
+	\hspace{10pt} U slu\v caju trake u ravni je dokazano da je najkra\' ci izlazni  put za jednog \v coveka Zalgalerova kriva, koja je du\v zine oko 2.278291644. 
 	\\ 
 	\\
- 	Bolje je i\' ci sa prijateljima jer je posmatrani put za tri \v coveka du\v zine 2, a izlazan je iz ove \v sume!
+ 	\hphantom{sdff}Bolje je i\' ci sa prijateljima jer je posmatrani put za tri \v coveka du\v zine 2, a izlazan je iz ove \v sume!
 	\begin{center}
 		\begin{minipage}{0.25\linewidth}
 			\includegraphics[width=\linewidth]{Zalgaller}
-			\captionof*{figure}{Zalgalerova kriva}
+			\captionof*{figure}{\hphantom{asd}Zalgalerova \hphantom{sdasd} kriva}
 		\end{minipage}
 		\hspace{30pt}
 		\begin{minipage}{0.25\linewidth}
@@ -124,48 +125,44 @@
 \headerbox{Rezultati - donje ograni\v cenje}{name=Rez4, column=3, row=0, span=3}
 {
 	Gomi je pokazao gornje organi\v cenje za du\v zinu puta \v sirine 1.
-	On nas je inspirisao da uradimo sli\v cno za na\v se uop\v stenje sa n ljudi.
+	On nas je inspirisao da uradimo sli\v cno za na\v se uop\v stenje sa $n$ ljudi.
 	\begin{theorem}
-		Neka je du\v zina najkra\' ceg izlaznog puta jedini\v cne \v sirine za $k\geqslant 2$ ljudi iz trake u $n\geqslant 2$ dimenzija $S_k$. Tada va\v zi:
+		Neka je du\v zina najkra\' ceg izlaznog puta za $k\geqslant 2$ ljudi iz trake u $n\geqslant 2$ dimenzija $S_k$. Tada va\v zi:
 		$$S_k\geqslant\frac{k}{2k-2}\cdot \sqrt{2.2782^2+9(n-2)}$$
 	\end{theorem}
-	\begin{hipoteza}
-		Kako na\v se re\v senja dobijena konstrukcijom imaju ceo "red veli\v cine" ve\' cu du\v zinu nego 
-		data donja ograni\v cenja pretpostavljamo da je mogu\' ce poo\v striti ove ocene. 
-	\end{hipoteza}
-	\vspace{0.15cm}
+	\vspace{0.2cm}
 }
 
 
 
 \headerbox{Rezultati - trake u $\mathbb{R}^n$}{name=Rez1, column=3, row=0, span=3, below=Rez4}
 {
- 	Ideja je bila  prona\' ci neki, \v sto ,,manji" objekat koji ne mo\v zemo da smestimo u traku u $\mathbb{R}^n$
+ 	Ideja je bila  prona\' ci neki, \v sto ,,manji`` objekat koji ne mo\v zemo da smestimo u traku u $\mathbb{R}^n$
  	\begin{theorem}
  		Izme\dj u dve hiperravni u $\mathbb{R}^n$ na udaljenosti 1 se ne mo\v ze postaviti pravilan $n$-simpleks stranice
  		$$\hat{a} = \sqrt{\frac{2\left\lceil \frac{n}{2}\right\rceil\cdot \left( n-\left\lceil\frac{n}{2}\right\rceil+1\right)}{n+1}}$$
  		tako da ga ni jedna od ove dve hiperravni ne se\v ce. 
 		%slika tetraedra izme\dj u ravni
  	\end{theorem}
- 	Dalje smo tra\v zili \v sto kra\v cu \' setnju po ovom objektu.
- 	Put koji formiraju po trojkama nekomplanarne ivice $n$-simpleksa \v cije su ivice du\v zine $\hat{a}$
+ 	Dalje smo tra\v zili \v sto kra\v cu \v setnju po ovom objektu.
+ 	Put koji formiraju po trojkama nekomplanarne ivice pravilnog $n$-simpleksa \v cije su ivice du\v zine $\hat{a}$
  	je izlazan za jednog \v coveka, a sli\v cno je i put koji formira $n+1$ du\v zi 
  	od centra do svih temena pravilnog $n$-simpleksa  izlazan za n ljudi. Ovi putevi imaju du\v zinu:
 	$$L_{n,1}=n\hat{a} \ \ \ \ \  L_{n, n+1}=\sqrt{\frac{n(n+1)}{2}}\hat{a}$$
 		%$$L_{n,n+1}=\sqrt{n\cdot\left\lceil\frac{n}{2}\right\rceil\cdot\left( n-\left\lceil\frac{n}{2}\right\rceil+1\right)}$$.
  	\begin{center}
  		
-	 	\begin{minipage}{0.25\linewidth}
+	 	\begin{minipage}{0.35\linewidth}
 			\includegraphics[width=\linewidth]{Put1}
 			\captionof*{figure}{Put za 1 \v coveka}
 		\end{minipage}
 		\hspace{30pt}
-	 	\begin{minipage}{0.25\linewidth}
+	 	\begin{minipage}{0.35\linewidth}
 			\includegraphics[width=\linewidth]{Put4}
 			\captionof*{figure}{Put za 4 ljudi}
 		\end{minipage}
 	\end{center}
-	 \vspace{0.10cm}
+	 \vspace{0.2cm}
 }
 
 
@@ -174,19 +171,18 @@
 {
 	\v Sta ako druga\v cije uop\v stimo trake u vi\v sim dimenzijama? \\
 	\begin{definition}
-		Defini\v simo \textbf{k-traku u n dimenzija} za svako prirodno $n$ i za svako $1\leqslant k\leqslant n-1$  kao \v sumu odredjenu
+		Defini\v simo \textbf{k-traku u n dimenzija} za svako prirodno $n$ i za svako $1\leqslant k\leqslant n-1$  kao \v sumu odre\dj enu
 		svim ta\v ckama iz $\mathbb{R}^n$ na udaljenosti manjoj ili jednakoj $\frac{1}{2}$ od nekog $k$-dimenzionog potprostora $\mathbb{R}^n$. 
 	\end{definition}
 	\begin{theorem}
 		Najkra\' ca izlazna putanja iz $k$-trake u $\mathbb{R}^n$ je ista kao najkra\' ca izlazna putanja iz trake u $\mathbb{R}^{k+1}$.
 	\end{theorem}
 	 \begin{center}
-	 	\begin{minipage}{0.25\linewidth}
+	 	\begin{minipage}{0.5\linewidth}
 			\includegraphics[width=\linewidth]{Valjak}
 			\captionof*{figure}{Valjak}
 		\end{minipage}
 	\end{center}
-	\vspace{0.15cm}
 }
 
 
@@ -194,23 +190,19 @@
 
 \headerbox{Dalji rad}{name=Dalje, column=3, row=0, span=3, below=Rez1}
 {
+\vspace{0.15cm}
 	Posmatranjem objekata poput zarubljenih simpleksa, mogu\' ce je jo\v s pobolj\v sati predstavljene rezultate. Recimo za 3 dimenzije.\\ \\
 	%slika zarubljenog tetraedra i puta po njemu
 	Tako\dj e prirodno je postaviti i slede\' ce pitanje:
-	"Grupa ljudi je zajedno izgubljena u \v sumi poznatih dimenzija. Koliko optimalno treba da ih bude,
-	i koliki put moraju da pre\dj u, tako da znaju da \' ce iza\' ci iz \v sume?"
+	,,Izgubljeni ste u \v sumi poznatih dimenzija sa nekim brojem prijatelja. Koliko optimalno treba da ih bude,
+	i koliki put morate da pre\dj ete, tako da znate da \' ce neko od vas iza\' ci iz \v sume? ``
 	\begin{hipoteza}
-		Ako je za n-to dimenzionu \v sumu $F$ du\v zina najkra\' ceg izlaznog puta za $k$ ljudi $S_k(F)$, tada je:
-		$$S(F)=\lim_{n \to \infty} S_n(F) = L_{n,n+1}$$
+		Ako je za $n$-dimenzionu \v sumu $F$ du\v zina najkra\' ceg izlaznog puta za $k$ ljudi $S_k(F)$, tada je du\v zina najkra\' ceg od njih:
+		$$\lim_{n \to \infty} S_n(F) = L_{n,n+1}$$
 	\end{hipoteza}
-	\vspace{0.15cm}
+	\vspace{0.2cm}
 }
 
 \end{poster}
 
 \end{document}
-
-
-
-
-
